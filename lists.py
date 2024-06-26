@@ -100,3 +100,35 @@ print(greek_gods)
 greek_gods.sort(key=str.lower)
 print("NOTICE: Case-insensitive sort - The list is sorted ignoring case sensitivity.")
 print(greek_gods)
+
+
+# Initialize list1 with some integers
+list1 = [1, 2, 3]
+
+# Create list2 as a reference copy of list1
+list2 = list1  # This is a reference copy (list2 is an alias)
+
+# Create list3 as a deep copy of list1
+list3 = list1.copy()  # This is a deep copy
+
+# Print the initial state of all lists
+print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}")
+
+# Append different strings to list1 and list2
+list1.append("appended to L1")
+list2.append("appended to L2")
+
+# Print the state of all lists after appending to list1 and list2
+print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}")
+
+# Create list4 by concatenating list1 and list3
+list4 = list1 + list3
+
+# Print the state of all lists after creating list4
+print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}, List 4: {list4}")
+
+# Append a string to list3
+list3.append("appended to L3")
+
+# Print the final state of all lists
+print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}, List 4: {list4}")
