@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import random
 import requests
-from bs4 import BeautifulSoup
 
 user_rank = None
 api_url = "https://tryhackme.com/api/discord/user/f4u"
