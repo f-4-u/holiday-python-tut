@@ -102,10 +102,10 @@ else:
             "options": ["spiders", "heights", "public speaking", "darkness"]},
         {"question": "Which OS do I prefer", "answer": "Linux", "options": ["Linux", "BSD", "MacOS", "Windows"]},
         {"question": "Which OSI Layer am I", "answer": "Network", "options": osi_layers},
-        {"question": "Which is my preferred Firewall OS:", "answer": "OPNsense",
+        {"question": "Which is my preferred Firewall OS", "answer": "OPNsense",
             "options": ["Cisco Catalyst", "OPNsense", "pfSense"]},
-        {"question": "How many VLANs are in my Network:", "answer": "12", "options": generate_numbers_list(20)},
-        {"question": "What's my THM rank:", "answer": str(user_rank), "options": generate_options(user_rank)},
+        {"question": "How many VLANs are in my Network", "answer": "12", "options": generate_numbers_list(20)},
+        {"question": "What's my THM rank", "answer": str(user_rank), "options": generate_options(user_rank)},
     ]
 
     # Function to ask questions and check answers
