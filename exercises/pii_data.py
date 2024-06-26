@@ -3,8 +3,6 @@
 from datetime import datetime
 
 # Function to calculate birth year based on age
-
-
 def calculate_birth_year(age):
     current_year = datetime.now().year
     birth_year = current_year - age

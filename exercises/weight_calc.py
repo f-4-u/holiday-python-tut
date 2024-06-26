@@ -5,11 +5,8 @@ def kg_to_lbs(weight_kg):
     return weight_kg * 2.20462
 
 # Function to convert pounds to kilograms
-
-
 def lbs_to_kg(weight_lbs):
     return weight_lbs / 2.20462
-
 
 # Collect weight input from the user
 weight = float(input("Enter your weight: "))
