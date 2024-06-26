@@ -132,3 +132,30 @@ list3.append("appended to L3")
 
 # Print the final state of all lists
 print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}, List 4: {list4}")
+
+# List of adjectives
+adj = ["tasty", "yellow", "red"]
+
+# List of fruits
+fruits = ["apple", "banana", "cherry"]
+
+# Nested loops to print combinations of adjectives and fruits
+for x in adj:
+    for y in fruits:
+        print(x, y)
+
+# Matrix of numbers
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Nested loops to print each element in the matrix
+for row in matrix:
+    for col in row:
+        print(col)
+
+# Loop with pass statement
+for x in [1, 2, 3]:
+    pass  # Placeholder statement, does nothing
