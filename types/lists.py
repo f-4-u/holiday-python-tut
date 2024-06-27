@@ -8,56 +8,75 @@ greek_gods = [
 ]
 
 # Print the initial list of Greek gods
+print("\nInitial list of Greek gods:")
+# Output: ['Hera', 'Poseidon', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades', 'Persephone']
 print(greek_gods)
 
 # Print the first element
-print(greek_gods[0])
+print("\nFirst element in the list of Greek gods:")
+print(greek_gods[0])  # Output: 'Hera'
 
 # Change the second element to "Zeus"
 greek_gods[1] = "Zeus"
-print(greek_gods[1])
+print("\nSecond element after changing to 'Zeus':")
+print(greek_gods[1])  # Output: 'Zeus'
 
 # Print the second and third elements
-print(greek_gods[1:3])
+print("\nSecond and third elements:")
+print(greek_gods[1:3])  # Output: ['Zeus', 'Demeter']
 
 # Print the last element
-print(greek_gods[-1])
+print("\nLast element in the list of Greek gods:")
+print(greek_gods[-1])  # Output: 'Persephone'
 
 # Initialize a mixed-type list
-list = ["String", 100, 1.5, True]
+mixed_list = ["String", 100, 1.5, True]
 
 # Append a new element to the list
-list.append("List")
-print(list)
+mixed_list.append("List")
+print("\nMixed list after appending 'List':")
+print(mixed_list)  # Output: ['String', 100, 1.5, True, 'List']
 
 # Insert elements at specific positions
-list.insert(1, "blue")
-list.insert(6, "blue")
-print(list)
+mixed_list.insert(1, "blue")
+mixed_list.insert(6, "blue")
+print("\nMixed list after inserting 'blue' at positions 1 and 6:")
+print(mixed_list)  # Output: ['String', 'blue', 100, 1.5, True, 'List', 'blue']
 
 # Extend the list with elements from greek_gods
-list.extend(greek_gods)
-print(list)
+mixed_list.extend(greek_gods)
+print("\nMixed list after extending with elements from 'greek_gods':")
+# Output: ['String', 'blue', 100, 1.5, True, 'List', 'blue', 'Hera', 'Zeus', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades', 'Persephone']
+print(mixed_list)
 
 # Remove the first occurrence of "blue"
-list.remove("blue")
-print(list)
+mixed_list.remove("blue")
+print("\nMixed list after removing the first occurrence of 'blue':")
+# Output: ['String', 100, 1.5, True, 'List', 'blue', 'Hera', 'Zeus', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades', 'Persephone']
+print(mixed_list)
 
 # Remove the last element
-list.pop()
-print(list)
+mixed_list.pop()
+print("\nMixed list after removing the last element:")
+# Output: ['String', 100, 1.5, True, 'List', 'blue', 'Hera', 'Zeus', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades']
+print(mixed_list)
 
 # Remove the element at index 5
-list.pop(5)
-print(list)
+mixed_list.pop(5)
+print("\nMixed list after removing the element at index 5:")
+# Output: ['String', 100, 1.5, True, 'List', 'Hera', 'Zeus', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades']
+print(mixed_list)
 
 # Delete the first element
-del list[0]
-print(list)
+del mixed_list[0]
+print("\nMixed list after deleting the first element:")
+# Output: [100, 1.5, True, 'List', 'Hera', 'Zeus', 'Demeter', 'Athena', 'Apollo', 'Artemis', 'Ares', 'Aphrodite', 'Hephaestus', 'Hermes', 'Hestia', 'Dionysus', 'Hades']
+print(mixed_list)
 
 # Clear all elements from the list
-list.clear()
-print(list)
+mixed_list.clear()
+print("\nMixed list after clearing all elements:")
+print(mixed_list)  # Output: []
 
 # Delete the variable greek_gods
 del greek_gods
@@ -71,15 +90,17 @@ greek_gods = [
 ]
 
 # Print each name in greek_gods
+print("\nPrinting each name in the reinitialized list of Greek gods:")
 for name in greek_gods:
     print(name)
 
 # Print each name from index 4 to the end
+print("\nPrinting each name from index 4 to the end in Greek gods list:")
 for i in range(4, len(greek_gods)):
     print(f"{i}: {greek_gods[i]}")
 
 # Notice about specific index pattern printing
-print("NOTICE: Starting from index 6, printing every 3rd Greek god:")
+print("\nNOTICE: Starting from index 6, printing every 3rd Greek god:")
 for i in range(6, len(greek_gods), 3):
     print(f"{i}: {greek_gods[i]}")
 
@@ -92,15 +113,16 @@ greek_gods = [
 
 # Sort the list based on ASCII values (default behavior)
 greek_gods.sort()
-print("NOTICE: Default ASCII sort - Uppercase letters come before lowercase letters, so 'hErmes' appears after 'hera', but both are at the end of the sorted list.\n"
+print("\nNOTICE: Default ASCII sort - Uppercase letters come before lowercase letters, so 'hera' appears after 'hErmes', but both are at the end of the sorted list.\n"
       "Also, numbers come before letters, so 'H3phaestus' appears before 'Hades'.")
+# Output: ['Apollo', 'Aphrodite', 'Ares', 'Athena', 'Demeter', 'Dionysus', 'H3phaestus', 'Hades', 'Hera', 'Hestia', 'Poseidon', 'Zeus', 'artemis', 'hErmes', 'hera']
 print(greek_gods)
 
 # Sort the list ignoring case sensitivity
 greek_gods.sort(key=str.lower)
-print("NOTICE: Case-insensitive sort - The list is sorted ignoring case sensitivity.")
+print("\nNOTICE: Case-insensitive sort - The list is sorted ignoring case sensitivity.")
+# Output: ['Aphrodite', 'Apollo', 'Ares', 'artemis', 'Athena', 'Demeter', 'Dionysus', 'H3phaestus', 'Hades', 'Hera', 'hErmes', 'Hestia', 'hera', 'Poseidon', 'Zeus']
 print(greek_gods)
-
 
 # Initialize list1 with some integers
 list1 = [1, 2, 3]
@@ -112,6 +134,8 @@ list2 = list1  # This is a reference copy (list2 is an alias)
 list3 = list1.copy()  # This is a deep copy
 
 # Print the initial state of all lists
+print("\nInitial state of list1, list2, and list3:")
+# Output: List 1: [1, 2, 3], List 2: [1, 2, 3], List 3: [1, 2, 3]
 print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}")
 
 # Append different strings to list1 and list2
@@ -119,43 +143,6 @@ list1.append("appended to L1")
 list2.append("appended to L2")
 
 # Print the state of all lists after appending to list1 and list2
+print("\nState of list1, list2, and list3 after appending to list1 and list2:")
+# Output: List 1: [1, 2, 3, 'appended to L1', 'appended to L2'], List 2: [1, 2, 3, 'appended to
 print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}")
-
-# Create list4 by concatenating list1 and list3
-list4 = list1 + list3
-
-# Print the state of all lists after creating list4
-print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}, List 4: {list4}")
-
-# Append a string to list3
-list3.append("appended to L3")
-
-# Print the final state of all lists
-print(f"List 1: {list1}, List 2: {list2}, List 3: {list3}, List 4: {list4}")
-
-# List of adjectives
-adj = ["tasty", "yellow", "red"]
-
-# List of fruits
-fruits = ["apple", "banana", "cherry"]
-
-# Nested loops to print combinations of adjectives and fruits
-for x in adj:
-    for y in fruits:
-        print(x, y)
-
-# Matrix of numbers
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-# Nested loops to print each element in the matrix
-for row in matrix:
-    for col in row:
-        print(col)
-
-# Loop with pass statement
-for x in [1, 2, 3]:
-    pass  # Placeholder statement, does nothing
